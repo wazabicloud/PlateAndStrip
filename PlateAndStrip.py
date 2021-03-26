@@ -102,7 +102,8 @@ def extract_data(filepath):
     return df
 
 
-# Determinare se il file è un .exe oppure è uno script di python:
+# Determinare se il file è un .exe oppure è uno script di python
+# Comunque non risolve il problema del collegamento
 
 if getattr(sys, 'frozen', False):
     application_path = sys._MEIPASS
