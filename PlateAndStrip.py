@@ -6,8 +6,6 @@ import numpy as np
 from scipy.signal import argrelextrema
 import sys
 
-
-
 def max_min(df, n):
     extremes_df = pd.DataFrame()
 
@@ -101,9 +99,7 @@ def extract_data(filepath):
 
     return df
 
-
 # Determinare se il file è un .exe oppure è uno script di python
-# Comunque non risolve il problema del collegamento
 
 if getattr(sys, 'frozen', False):
     application_path = sys._MEIPASS
